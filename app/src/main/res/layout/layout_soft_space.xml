@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <!-- 饼状图及其右边的说明 -->
+    <RelativeLayout
+        android:id="@+id/rl_piechatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.zxzq.housekeeper.view.PiechatView
+            android:id="@+id/piechatView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/piechatView"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+
+                >
+                <LinearLayout
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@color/piechat_phone_space"
+                    android:layout_gravity="center_vertical">
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:text="手机内置空间"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@color/piechart_sdcard_space"
+                    android:layout_gravity="center">
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:text="外置存储空间"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- 手机内置空间的进度条 -->
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+    <TextView
+        android:id="@+id/tv_phoneSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机内置空间"
+        android:textSize="18sp"/>
+    <ProgressBar
+        android:id="@+id/pb_soft_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/tv_phoneSpace"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/soft_progressbar_phone_space"
+        android:max="100"
+        android:progress="30"/>
+    <TextView
+        android:id="@+id/tv_phone_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100MB/1000MB"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pb_soft_progressbar"/>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/tv_sdSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="外置存储空间"
+            android:textSize="18sp"/>
+        <ProgressBar
+            android:id="@+id/pb_soft_progressbar1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_sdSpace"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/soft_progressbar_phone_space"
+            android:max="100"
+            android:progress="0"/>
+        <TextView
+            android:id="@+id/tv_sd_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100MB/1000MB"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pb_soft_progressbar1"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

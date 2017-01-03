@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--常用颜色-->
+    <color name="green">#090</color>
+    <color name="red">#900</color>
+    <color name="blue">#009</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="transparent">#0000</color>
+
+
+
+
+    <!--手机所占内存的颜色-->
+    <color name="piechat_phone_space">#000099</color>
+    <!--sd卡所占内存颜色-->
+    <color name="piechart_sdcard_space">#009700</color>
+    <!--饼状图的背景色-->
+    <color name="piechat_background_color">#D27D00</color>
+
+    <!--卸载所有软件按钮的正常状态的颜色-->
+    <color name="pressTrue">#C0C0C0</color>
+    <!--卸载所有软件按钮的按下状态的颜色-->
+    <color name="normal">#00899E</color>
+
+    <!--Home球的背景色-->
+    <color name="home_clear_arc">#D27D00</color>
+
+    <!--进度条的背景色-->
+    <color name="battery_progressbar_bg">#FF8C00</color>
+    <!--进度条进度色-->
+    <color name="battery_speed">#00AA00</color>
+</resources>

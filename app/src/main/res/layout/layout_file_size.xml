@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="#0E1E9F">
+
+    <TextView
+        android:id="@+id/tv_file_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00GB"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_file_size"
+        android:layout_toLeftOf="@id/tv_file_size"
+        android:text="已发现"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        />
+</RelativeLayout>

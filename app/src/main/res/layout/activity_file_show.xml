@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_file_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxzq.housekeeper.activity.FileShowActivity">
+    <com.zxzq.housekeeper.view.ActionBarView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zxzq.housekeeper.view.ActionBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_file_text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件数量:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_file_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000个"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/battery_progressbar_bg"
+            />
+        <TextView
+            android:id="@+id/tv_file_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="占用空间："
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="191.1K"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/battery_progressbar_bg"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_file_show_lisiview"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_file_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/b_file_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除所选文件"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/style_all_button"/>
+    </LinearLayout>
+</LinearLayout>

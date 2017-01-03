@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_phonemgr_show_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxzq.housekeeper.activity.Phonemgr_show_app">
+
+    <com.zxzq.housekeeper.view.ActionBarView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"></com.zxzq.housekeeper.view.ActionBarView>
+
+    <include layout="@layout/layout_listview"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_select_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/b_unload"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="卸载所有软件"
+            android:textSize="23sp"
+            android:background="@drawable/style_all_button"/>
+    </LinearLayout>
+
+
+</LinearLayout>

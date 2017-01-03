@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <CheckBox
+        android:id="@+id/cb_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:button="@drawable/check_rect_correct"
+        />
+    <ImageView
+        android:id="@+id/iv_appIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/cb_del"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_appLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/iv_appIcon"
+        android:layout_alignTop="@id/iv_appIcon"
+        android:text="@string/app_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/tv_appPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="com.zxzq.housekeeper"
+        android:layout_toRightOf="@id/iv_appIcon"
+        android:layout_alignBottom="@id/iv_appIcon"
+        android:layout_marginLeft="5dp"
+
+        android:layout_below="@id/tv_appLabel"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/tv_appVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@id/iv_appIcon"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

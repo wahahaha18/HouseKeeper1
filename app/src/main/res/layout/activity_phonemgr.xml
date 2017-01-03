@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_phonemgr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxzq.housekeeper.activity.PhonemgrActivity">
+
+    <com.zxzq.housekeeper.view.ActionBarView
+        android:id="@+id/actionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.zxzq.housekeeper.view.ActionBarView>
+    <LinearLayout
+        android:id="@+id/ll_phonemgr_battery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phonemgr_height"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="horizontal"
+        >
+        <ProgressBar
+            android:id="@+id/pb_phonemgr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pohonemgr_battery_height"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/phonemgr_bg_pb"
+            android:progress="30"
+            android:layout_weight="1"/>
+        <View
+            android:id="@+id/view_phonemgr"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:background="@color/battery_progressbar_bg"/>
+        <TextView
+            android:id="@+id/tv_phonemgr_batteryNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 %"
+            android:layout_marginLeft="20dp"
+            android:textSize="23sp"
+            android:textColor="@color/battery_speed"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <include layout="@layout/layout_phonengr_listview"/>
+</LinearLayout>

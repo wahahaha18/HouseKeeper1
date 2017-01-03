@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxzq.housekeeper.activity.AboutActivity">
+<!--导航条-->
+    <com.zxzq.housekeeper.view.ActionBarView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+    </com.zxzq.housekeeper.view.ActionBarView>
+    <!--背景图-->
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/androidy"/>
+    <!--软件名称-->
+    <TextView
+        android:id="@+id/tv_app_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_app_icon"
+        android:text="@string/app_name"
+        android:layout_marginTop="16dp"/>
+    <!--版本号-->
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_app_label"
+        android:text="v1.0.0"
+        android:layout_marginTop="25dp"/>
+</RelativeLayout>

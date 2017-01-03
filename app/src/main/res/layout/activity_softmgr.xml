@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_softmgr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    tools:context="com.zxzq.housekeeper.activity.SoftmgrActivity">
+    <com.zxzq.housekeeper.view.ActionBarView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zxzq.housekeeper.view.ActionBarView>
+    <include layout="@layout/layout_soft_space"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_soft_listitem"/>
+    </ScrollView>
+
+
+</LinearLayout>
